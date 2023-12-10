@@ -1,0 +1,205 @@
+.main-con{
+    width: 100%;
+  min-height: 100vh;
+  // background: #fff;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  
+  background-size: cover;
+
+  .main-con-ch{
+    padding: 10%;
+    h1{
+        font-size: 3em;
+        font-weight: 1200;
+    }
+    span{
+        font-size: 15px;
+        font-weight: 500;
+
+    }
+    #text{
+        #mail{
+              font-weight: 900;
+        }
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        // background: lightblue;
+        width: 50%;
+        input{
+            margin: 5% 0;
+            padding: 1.8%;
+            box-sizing: border-box;
+            width: 100%;
+            display: block;
+            background: transparent;
+            border: 0;
+            font-size: .9em;
+            &::placeholder{
+                font-size: 1.2em;
+                font-weight: 500;
+             // font-weight: 520;
+            }
+        }
+        textarea{
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            resize: none;
+            background: transparent;
+            border: 0;
+            // outline: .01px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1.5%;
+            padding-left: 2%;
+            &::placeholder{
+                font-size: 1.2em;
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+            }
+        }
+        .dark-b{
+            outline: .01px solid rgba(0, 0, 0, 0.1);
+        }
+        .light-b{
+            outline: .01px solid rgba(255, 255, 255, 0.1);
+        }
+        .darkBg{
+            background: #000;
+        }
+        .lightBg{
+            background: #fff;
+        }
+        .btext{
+            color: #686868;
+        }
+        .ltext{
+            color: #fff;
+        }
+        button{
+            margin: 5% 0;
+            width: 30%;
+            border-radius: 5px;
+            border: 0;
+            // background: #000;
+            font-weight: 500;
+            font-size: 1em;
+            cursor: pointer;
+            // color: #fff;
+            padding: 3%;
+
+        }
+        border-radius: 5px;
+    }
+    #Home{
+        cursor: pointer;
+    }
+    .social{
+        width: 50%;
+        height: 10%;
+        // background: cyan;
+        margin-top: 5%;
+        a{
+            margin-left: 6%;
+            text-decoration: none;
+            
+        }
+    }
+    #arrow {
+        width: fit-content;
+        animation: again 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+      }
+      
+      @keyframes again {
+        0%, 100% {
+          margin-left: 0px;
+        }
+        50% {
+          margin-left: 15px;
+        }
+      }
+      
+  }
+}
+.bg-ch-l{
+    background-image:url('../../assets/bg-w.png');
+}
+.bg-ch-d{
+    background-image:url('../../assets/bg-d.png');
+}
+
+
+@media screen and (max-width: 640px) {
+    .main-con .main-con-ch h1 {
+        font-size: 2em;
+    }
+    .main-con .main-con-ch {
+        padding: 15% 10%;
+    }
+
+    .main-con .main-con-ch .form {
+        width: 70%;    
+    }
+    .main-con .main-con-ch .form button {
+        width: 28%;
+        padding: 3%;
+        font-size: .7em;
+       
+    }
+    .main-con .main-con-ch .social {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+    .main-con .main-con-ch .social a {
+        margin-left: 0%;
+    }
+    .main-con .main-con-ch span {
+        font-size: 10px;
+    }
+
+
+
+}
+@media screen and (max-width: 450px) {
+    .main-con .main-con-ch {
+         padding: 10%; 
+    }
+
+    .main-con .main-con-ch h1 {
+
+        margin-bottom: 5%;
+    }
+.main-con .main-con-ch .form {
+    width: 90%;
+}
+.main-con .main-con-ch span {
+    font-size: 12px;
+}
+.main-con .main-con-ch .form button {
+    width: 35%;
+    padding: 3%;
+    font-size: 0.7em;
+}
+
+}
+
+@media screen and (max-width: 350px) {
+    .main-con .main-con-ch {
+        padding: 10% 5%;
+    }
+    .main-con .main-con-ch {
+        height: 80vh;
+    }
+    .main-con .main-con-ch .form {
+        width: 100%;
+    }
+    .main-con .main-con-ch span {
+        font-size: 13px;
+    }
+}

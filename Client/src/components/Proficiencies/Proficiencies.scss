@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=PT+Sans&family=Playpen+Sans:wght@100;200&family=Poppins:wght@300;500;600&family=Roboto+Slab&display=swap");
+
+
+
+.main-p{
+    width: 100%;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+    .main-ch{
+        padding: 10% 10%;
+        width: 100%;
+        min-height: 100vh;
+        box-sizing: border-box;
+        .bxs{
+            width: 100%;
+            height: 80vh;
+            display: flex;     
+            align-items: center;
+            
+            .fleft{
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                height: 80%;
+                margin-left: 5%;
+                span{
+                    font-size: 3.5em;
+                    font-weight: 800;
+                }
+                .content{
+                    font-size: 1.2em;
+                    width: 90%;
+                    font-weight: 350;
+                    margin-top: 5%;
+                    line-height: 2em;
+                }
+            }
+            .fright{
+                width: 60%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                span{
+                    position: absolute;
+                    width: fit-content;
+                    padding: .8% 5%;
+                    // background: #fff;
+                    left: 5%;
+                    font-weight: 600;
+                 
+                    top: -5%;
+                    
+
+                }
+                img{
+                    width: 100%;                    
+                }
+            }
+            .borcolw{
+                border: 2px solid hsl(0, 0%, 25%);
+                box-shadow: 8px 5px hsl(0, 0%, 25%);
+            }
+            .borcolb{
+                border: 2px solid #fff;
+                box-shadow: 8px 5px #fff;
+            }
+        }
+        
+        .freverse{
+            flex-direction: row-reverse;
+        }
+        
+    }
+    
+}
+
+
+.probacklt{
+    background: hsl(55, 97%, 85%);
+}
+.probackbk{
+    background: rgba(38, 37, 40, 0.99);
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+.main-p .main-ch .bxs {
+    margin-top: 20%;
+}
+.main-p .main-ch {
+    padding: 1% 10%;
+}
+.main-p .main-ch .bxs .fleft .content {
+    font-size: 1.1em;
+    width: 90%;
+    margin-top: 1%;
+    line-height: 1.5em;
+}
+ 
+    .main-p{
+        width: 100%;
+        min-height: 100vh;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol";
+        .main-ch{
+            min-height: 100vh;
+            .bxs{
+                width: 100%;
+                height: 90vh;
+                
+                flex-direction: column;
+         
+                
+                .fleft{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    height: 50%;
+                    // margin-left: 5%;
+                    span{
+                        font-size: 2.5em;
+                        font-weight: 800;
+                    }
+                }
+                .fright{
+                    width: 100%;
+                    height: 50%;
+                    margin-top: 8%;
+                  
+                    flex-direction: column;
+                    img{
+                        height: 100%;
+                    }
+                 
+                }
+            }
+            .freverse{
+                flex-direction: column;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 450px) {
+    .main-p .main-ch {
+        padding: 15% 10%;
+    }
+
+    .main-p .main-ch .bxs .fleft span {
+        font-size: 2em;
+        height: 20%;
+    }
+
+    .main-p .main-ch .bxs .fleft .content {
+        font-size: 1em;
+        height: 80%;
+        line-height: 1.4em;
+    }
+    .main-p .main-ch .bxs {
+        margin-top: 0%;
+        margin-bottom: 15%;
+    }
+    .main-p .main-ch .bxs .fright {
+        margin-top: 0%;
+    }
+    .main-p .main-ch .bxs {
+        height: 75vh;
+
+    }
+
+
+  
+}
+
+@media screen and (max-width: 350px) {
+    .main-p .main-ch .bxs .fleft .content {
+        font-size: .9em;
+        line-height: 1.2em;
+    }
+    .main-p .main-ch .bxs .fleft .content {
+        margin-top: 5%;
+    }
+   
+}
